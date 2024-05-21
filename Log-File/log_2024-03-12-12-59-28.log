@@ -1,0 +1,48 @@
+[2024-03-12 12:59:29,739] root - INFO - Starting data ingestion
+[2024-03-12 12:59:29,825] root - INFO - storing train and test data
+[2024-03-12 12:59:30,068] root - INFO - data validation started........
+[2024-03-12 12:59:30,171] root - INFO - dropping null values
+[2024-03-12 12:59:30,176] root - INFO - now shape of df : (20153, 42)
+[2024-03-12 12:59:30,177] root - INFO - now shape of df : (5039, 42)
+[2024-03-12 12:59:30,177] root - INFO - drop_index_column 
+[2024-03-12 12:59:30,177] root - INFO - now shape of df : (20153, 42)
+[2024-03-12 12:59:30,177] root - INFO - now shape of df : (5039, 42)
+[2024-03-12 12:59:30,183] root - INFO - Data types converted from float to int
+[2024-03-12 12:59:30,186] root - INFO - Data types converted from float to int
+[2024-03-12 12:59:30,319] root - INFO - data validation is almost done
+[2024-03-12 12:59:30,319] root - INFO - returning data_validation_artifact
+[2024-03-12 12:59:30,321] root - INFO - Starting data transformation...
+[2024-03-12 12:59:30,896] root - INFO - [[-4.03880878e+00 -1.06019024e+00  7.16567451e-02 ...  1.24777474e-01
+   2.98806628e-02 -6.64303873e-02]
+ [ 1.69653775e+00 -5.96545967e-01 -1.80600727e-01 ...  7.55749433e-02
+  -1.03219274e-01  1.48679379e-01]
+ [-4.10851817e+00 -1.04109001e+00  6.63963655e-02 ...  1.71407847e-01
+   4.91855588e-02 -1.02768870e-01]
+ ...
+ [ 2.60137343e+00 -9.69796438e-01 -1.38492771e-01 ...  2.47265674e-01
+  -1.01102169e-02 -6.00464619e-02]
+ [ 2.24366107e+00 -9.13189893e-01 -1.49126084e-01 ...  3.53183246e-01
+  -7.19026044e-04 -1.03874372e-01]
+ [-4.10387285e+00 -1.03996599e+00  6.82723912e-02 ...  1.62098455e-01
+   4.57699437e-02 -9.32758577e-02]]
+[2024-03-12 12:59:31,096] root - INFO - Data transformation completed.
+[2024-03-12 12:59:31,101] root - INFO - Reading train and test data from data_transformation artifacts...
+[2024-03-12 12:59:31,103] root - INFO - splitting train and test data into x_train, x_test and y_train, y_test ...
+[2024-03-12 12:59:31,103] root - INFO - X_train shape is : (20153, 11)
+[2024-03-12 12:59:31,104] root - INFO - x_test shape is : (5039, 11)
+[2024-03-12 12:59:31,104] root - INFO - ready to fit data to model...
+[2024-03-12 12:59:31,284] root - INFO - data fitted to model...
+[2024-03-12 12:59:31,286] root - INFO - predicted accuracy for x_test : 0.9521730502083747
+[2024-03-12 12:59:31,288] root - INFO - predicted accuracy for x_train : 0.947402371855307
+[2024-03-12 12:59:31,300] root - INFO - predicted precision for x_train : 0.9499946114883069
+[2024-03-12 12:59:31,305] root - INFO - predicted precision for x_test : 0.9571491036292086
+[2024-03-12 12:59:31,322] root - INFO - predicted for f1 x_train : 0.9432851792402354
+[2024-03-12 12:59:31,326] root - INFO - predicted for f1  x_test : 0.947824204373241
+[2024-03-12 12:59:31,326] root - INFO - calculating absolute diff between r2_train_score and r2_test_score, :  0.00477067835306777
+[2024-03-12 12:59:31,326] root - INFO - observing model performance whether is underfitted or overfitted...
+[2024-03-12 12:59:31,328] root - INFO - save the model as a dill(pickle) file....
+[2024-03-12 12:59:31,330] root - INFO - Model evaluation started ......
+[2024-03-12 12:59:31,330] root - INFO - model_evaluation_artifact : ModelEvaluationArtifact(model_eccepted=True, improved_accuracy=None)
+[2024-03-12 12:59:31,330] root - INFO - model pusher is started.....
+[2024-03-12 12:59:31,331] root - INFO - reading(unpickling) transformer and model
+[2024-03-12 12:59:31,335] root - INFO - saving transformer and model file into saved folder...
